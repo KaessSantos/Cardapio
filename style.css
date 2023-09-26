@@ -230,6 +230,8 @@ header .header-ajust span {
   }
   100% {
     transform: rotate(360deg);
+    background-color: orange;
+    border: 4px dashed #000;
   }
 }
 @media screen and (max-width: 992px) {

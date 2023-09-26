@@ -54,6 +54,8 @@ header{
 
     100%{
         transform: rotate(360deg);
+        background-color: orange;
+        border: 4px dashed $black-primary;
     }
 }
 
