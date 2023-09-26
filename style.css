@@ -45,6 +45,7 @@
   background-color: #fff;
   margin: 0 auto;
   border-radius: 20px;
+  position: relative;
 }
 
 body > p {
@@ -96,6 +97,14 @@ body > p {
   display: flex;
   flex-direction: row;
   gap: 60px;
+}
+
+.img-prato {
+  width: 50%;
+}
+
+.img-porc {
+  width: 50%;
 }
 
 .drink-ajust {
@@ -166,6 +175,12 @@ body > p {
   }
   .carda {
     font-size: 4rem;
+  }
+  .img-prato {
+    width: 100%;
+  }
+  .img-porc {
+    width: 90%;
   }
 }
 header {
