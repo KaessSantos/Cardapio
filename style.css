@@ -41,78 +41,63 @@
   src: url(../files/fonts/DancingScript-SemiBold.ttf);
 }
 .container {
-  max-width: 1600px;
-  margin: 0 auto;
+  max-width: 1440px;
   background-color: #fff;
-  margin-top: 120px;
-  border-radius: 25px;
-  padding: 5px 20px;
-  position: relative;
+  margin: 0 auto;
+  border-radius: 20px;
 }
-.container .img-prato {
-  display: flex;
-  position: absolute;
-  width: 25%;
-  left: 0px;
-  top: 650px;
-  z-index: 1;
-}
-.container .img-porc {
-  display: flex;
-  position: absolute;
-  width: 25%;
-  right: 18px;
-  top: 800px;
-  z-index: 1;
+
+body > p {
+  color: #fff;
+  font-size: 4.5rem;
+  text-align: center;
+  font-family: dancing-Regular;
+  text-transform: capitalize;
+  padding: 5px;
 }
 
 header {
-  display: flex;
-  flex-direction: column;
   width: 100%;
-  position: relative;
+  padding: 15px;
 }
-
-header > p {
-  color: #fff;
-  position: absolute;
-  top: -110px;
-  font-family: dancing-regular;
-  font-size: 5rem;
-  text-transform: capitalize;
-}
-
-.header-ajust {
+header .header-ajust {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-}
-.header-ajust h1 {
-  font-size: 3rem;
-  text-transform: uppercase;
-  font-family: poppins-semibold;
-  text-shadow: 0px 2px 35px black;
-}
-
-.loa {
   position: relative;
-  background-color: transparent;
-  width: 160px;
-  height: 160px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+}
+header .header-ajust .loa {
+  width: 150px;
+  height: 150px;
+  border: 4px dashed #f17105;
   border-radius: 50%;
-  border: 3px dashed #f17105;
-  animation-name: load;
+  right: 0;
+  animation-name: animarLoad;
   animation-duration: 30s;
-  animation-timing-function: linear;
   animation-iteration-count: infinite;
 }
+header .header-ajust h1 {
+  font-size: 3rem;
+  font-family: poppins-semibold;
+  text-transform: uppercase;
+}
+header .header-ajust p {
+  color: #f17105;
+  font-family: poppins-regular;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-size: 1rem;
+  position: absolute;
+  right: 18px;
+}
+header .header-ajust span {
+  color: #000;
+  font-weight: bold;
+}
 
-@keyframes load {
+@keyframes animarLoad {
   0% {
     transform: rotate(0);
   }
@@ -120,283 +105,35 @@ header > p {
     transform: rotate(360deg);
   }
 }
-.loaP {
-  display: flex;
-  flex-direction: column;
-  color: #f17105;
-  font-weight: bold;
-  position: absolute;
-  right: 17px;
-  text-align: center;
-}
-.loaP span {
-  color: #000;
-  font-weight: bold;
-  font-family: poppins-semibold;
-}
-
-.section-on {
-  background-color: rgba(233, 229, 229, 0.555);
-  padding: 10px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  border-radius: 25px;
-  margin-top: 15px;
-}
-.section-on h2 {
-  font-size: 3rem;
-  text-transform: uppercase;
-  font-family: poppins-regular;
-  color: #f17300;
-  padding: 10px;
-}
-
-.executive-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-}
-
-.col-on {
-  display: flex;
-  flex-direction: column;
-  margin: 20px;
-  padding: 15px;
-}
-.col-on .pratos-info {
-  margin: 10px;
-}
-.col-on .pratos-info :first-child {
-  font-size: 1.3rem;
-  text-transform: uppercase;
-  font-family: poppins-ligth;
-  font-weight: 400;
-}
-.col-on .pratos-info :last-child {
-  color: #f17300;
-  font-size: 0.8rem;
-  text-transform: uppercase;
-  font-weight: 600;
-}
-
-.section-twu {
-  background-color: rgba(233, 229, 229, 0.555);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  border-radius: 25px;
-  margin-top: 45px;
-}
-.section-twu h2 {
-  color: #f17300;
-  font-size: 3rem;
-  line-height: 42px;
-  padding-top: 20px;
-  text-transform: uppercase;
-}
-.section-twu p {
-  font-size: 1.3rem;
-  text-transform: uppercase;
-  font-family: poppins-regular;
-}
-
-.section-pf {
-  padding: 25px 0;
-}
-
-.section-twu > p {
-  font-weight: bold;
-  text-transform: uppercase;
-  font-size: 0.9rem;
-  font-family: poppins-ligth;
-}
-
-.section-twry {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: rgba(233, 229, 229, 0.555);
-  margin-top: 45px;
-  border-radius: 25px;
-}
-.section-twry h2 {
-  color: #f17300;
-  font-size: 3rem;
-  text-transform: uppercase;
-}
-
-.section-porc {
-  display: flex;
-  flex-direction: row;
-  padding: 50px 0px;
-  gap: 70px;
-}
-.section-porc div > p {
-  font-size: 1.3rem;
-  text-transform: uppercase;
-  font-family: poppins-regular;
-}
-
-.section-drink {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: rgba(233, 229, 229, 0.555);
-  margin-top: 45px;
-  border-radius: 25px;
-  position: relative;
-  height: 200px;
-  margin-bottom: 50px;
-}
-.section-drink img {
-  width: 25%;
-}
-.section-drink h2 {
-  color: #f17300;
-  font-size: 3rem;
-  text-transform: uppercase;
-}
-
-.drink-ajust {
-  display: flex;
-  flex-direction: row;
-  gap: 150px;
-}
-.drink-ajust div {
-  font-size: 1.3rem;
-  text-transform: uppercase;
-  font-family: poppins-regular;
-}
-
-.coca {
-  position: absolute;
-  left: 0;
-  bottom: -75px;
-}
-
-.heineken {
-  position: absolute;
-  right: 0;
-  bottom: -75px;
-}
-
 @media screen and (max-width: 992px) {
-  header {
-    padding: 0px 20px;
-  }
-  header > p {
-    font-size: 4rem;
-    color: #fff;
-    position: absolute;
-    top: -90px;
-    font-family: dancing-regular;
-    text-transform: capitalize;
-    margin-left: 7px;
-  }
-  .header-ajust h1 {
-    font-size: 1.5rem;
-    text-transform: uppercase;
-    font-family: poppins-semibold;
-    text-shadow: 0px 2px 35px black;
-  }
-  .header-ajust .loa {
-    position: relative;
-    background-color: transparent;
-    width: 100px;
-    height: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    border-radius: 50%;
-    border: 5px dashed #f17105;
-    animation-name: load;
-    animation-duration: 30s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-  }
-  .loaP {
-    font-size: 0.7rem;
-    right: 30px;
-  }
-  .section-on h2 {
-    font-size: 1.8rem;
-  }
-  .col-on {
-    padding: 0;
-  }
-  .col-on .pratos-info {
-    margin: 10px;
-  }
-  .col-on .pratos-info :first-child {
-    font-size: 1rem;
-    text-transform: uppercase;
-    font-family: poppins-ligth;
-    font-weight: 400;
-  }
-  .col-on .pratos-info :last-child {
-    color: #f17300;
-    font-size: 0.7rem;
-    text-transform: uppercase;
-    font-weight: 600;
-  }
-  .section-twu h2 {
-    font-size: 2rem;
-  }
-  .section-twu p {
-    font-size: 1rem;
-  }
-  .section-twu .section-pf p {
-    font-size: 1rem;
-  }
-  .section-twry h2 {
-    font-size: 2rem;
-  }
-  .section-twry .section-porc p {
-    font-size: 1rem;
-  }
-  .section-drink h2 {
-    font-size: 2rem;
-  }
-  .section-drink .drink-ajust p {
-    font-size: 1rem;
-  }
-  .coca {
-    position: absolute;
-    left: 0;
-    bottom: 5px;
-  }
-  .heineken {
-    position: absolute;
-    right: 0;
-    bottom: 5px;
+  header .header-ajust h1 {
+    font-size: 2.5rem;
   }
 }
 @media screen and (max-width: 768px) {
-  .container .img-prato {
-    top: 880px;
-    left: 30px;
-    width: 95%;
+  header .header-ajust h1 {
+    font-size: 1.8rem;
   }
-  .container .img-porc {
-    top: 62%;
-    left: 70px;
-    width: 75%;
-  }
-  .executive-container {
+}
+@media screen and (max-width: 600px) {
+  header .header-ajust {
     flex-direction: column;
   }
-  .section-twu {
-    margin-top: 250px;
+  header .header-ajust h1 {
+    font-size: 1.8rem;
+    padding: 15px 0;
   }
-  .section-twry {
-    margin-top: 250px;
+  header .header-ajust p {
+    color: #f17105;
+    font-family: poppins-regular;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 1rem;
+    position: absolute;
+    bottom: 0;
+    left: 18px;
+    top: 52%;
   }
 }
 body {
@@ -405,8 +142,14 @@ body {
   position: relative;
   font-family: poppins-ligth;
   background-color: #f17105;
+  padding: 10px 30px;
 }
 
+@media screen and (max-width: 600px) {
+  body {
+    padding: 10px 10px;
+  }
+}
 a {
   cursor: pointer;
   text-decoration: none;

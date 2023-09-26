@@ -1,0 +1,113 @@
+header{
+    width: 100%;
+    padding: 15px;
+
+    .header-ajust{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+
+
+        .loa{
+            width: 150px;
+            height: 150px;
+            border: 4px dashed $abobora;
+            border-radius: 50%;
+            right: 0;
+            animation-name:  animarLoad;
+            animation-duration: 30s;
+            animation-iteration-count: infinite;
+
+        }
+
+        h1{
+            font-size: 3rem;
+            font-family: poppins-semibold;
+            text-transform: uppercase;
+        }
+
+        p{
+            color: $abobora;
+            font-family: poppins-regular;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            font-size: 1rem;
+            position: absolute;
+            right: 18px;
+        }
+
+        span{
+            color: $black-primary;
+            font-weight: bold;
+        }
+    }
+}
+
+
+@keyframes animarLoad{
+    0%{
+        transform: rotate(0);
+    }
+
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+
+@media screen and (max-width: 992px){
+
+    header{
+
+        .header-ajust{
+            
+            h1{
+                font-size: 2.5rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px){
+    header{
+
+        .header-ajust{
+            
+            h1{
+                font-size: 1.8rem;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 600px){
+    header{
+
+        .header-ajust{
+
+            flex-direction: column;
+            
+            h1{
+                font-size: 1.8rem;
+                padding: 15px 0;
+            }
+
+            p{
+                color: $abobora;
+                font-family: poppins-regular;
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                font-size: 1rem;
+                position: absolute;
+                bottom: 0;
+                left: 18px;
+                top: 52%;
+            }
+        }
+    }
+}

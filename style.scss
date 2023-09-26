@@ -8,6 +8,7 @@
 @import "assets/fonts";
 @import "assets/colors";
 @import "assets/main";
+@import "assets/header";
 
 body{
     width: 100%;
@@ -15,7 +16,16 @@ body{
     position: relative;
     font-family: poppins-ligth;
     background-color: $abobora;
+    padding: 10px 30px;
 }
+
+@media screen and (max-width: 600px){
+    body{
+        padding: 10px 10px;
+    }
+}
+
+
 
 a{
     cursor: pointer;    
