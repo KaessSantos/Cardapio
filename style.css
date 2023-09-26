@@ -1,0 +1,314 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+@font-face {
+  font-family: poppins-ligth;
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+  src: url(../files/fonts/Poppins-Light.ttf);
+}
+@font-face {
+  font-family: poppins-regular;
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url(../files/fonts/Poppins-Regular.ttf);
+}
+@font-face {
+  font-family: poppins-semibold;
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+  src: url(../files/fonts/Poppins-SemiBold.ttf);
+}
+@font-face {
+  font-family: dancing-Regular;
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url(../files/fonts/DancingScript-Regular.ttf);
+}
+@font-face {
+  font-family: dancing-semibold;
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+  src: url(../files/fonts/DancingScript-SemiBold.ttf);
+}
+.container {
+  max-width: 1600px;
+  margin: 0 auto;
+  background-color: #fff;
+  margin-top: 120px;
+  border-radius: 25px;
+  padding: 5px 20px;
+  position: relative;
+}
+.container .img-prato {
+  display: flex;
+  position: absolute;
+  width: 450px;
+  left: 0px;
+  top: 550px;
+  z-index: 1;
+}
+.container .img-porc {
+  display: flex;
+  position: absolute;
+  width: 450px;
+  right: 18px;
+  top: 800px;
+  z-index: 1;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  position: relative;
+}
+
+header > p {
+  color: #fff;
+  position: absolute;
+  top: -110px;
+  font-family: dancing-regular;
+  font-size: 5rem;
+  text-transform: capitalize;
+}
+
+.header-ajust {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-ajust h1 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  font-family: poppins-semibold;
+  text-shadow: 0px 2px 35px black;
+}
+.header-ajust .loa {
+  position: relative;
+  background-color: transparent;
+  width: 150px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 50%;
+  border: 5px dashed #f17105;
+  animation-name: load;
+  animation-duration: 30s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.loaP {
+  display: flex;
+  flex-direction: column;
+  color: #f17105;
+  font-weight: bold;
+  position: absolute;
+  right: 17px;
+  text-align: center;
+}
+.loaP span {
+  color: #000;
+  font-weight: bold;
+  font-family: poppins-semibold;
+}
+
+@keyframes load {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.section-on {
+  background-color: rgba(233, 229, 229, 0.555);
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25px;
+  margin-top: 15px;
+}
+.section-on h2 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  font-family: poppins-regular;
+  color: #f17300;
+  padding: 10px;
+}
+
+.executive-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.col-on {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  padding: 15px;
+}
+.col-on .pratos-info {
+  margin: 10px;
+}
+.col-on .pratos-info :first-child {
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  font-family: poppins-ligth;
+  font-weight: 400;
+}
+.col-on .pratos-info :last-child {
+  color: #f17300;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.section-twu {
+  background-color: rgba(233, 229, 229, 0.555);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25px;
+  margin-top: 45px;
+}
+.section-twu h2 {
+  color: #f17300;
+  font-size: 3rem;
+  line-height: 42px;
+  padding-top: 20px;
+  text-transform: uppercase;
+}
+.section-twu p {
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  font-family: poppins-regular;
+}
+
+.section-pf {
+  padding: 25px 0;
+}
+
+.section-twu > p {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  font-family: poppins-ligth;
+}
+
+.section-twry {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(233, 229, 229, 0.555);
+  margin-top: 45px;
+  border-radius: 25px;
+}
+.section-twry h2 {
+  color: #f17300;
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+
+.section-porc {
+  display: flex;
+  flex-direction: row;
+  padding: 50px 0px;
+  gap: 70px;
+}
+.section-porc div > p {
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  font-family: poppins-regular;
+}
+
+.section-drink {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(233, 229, 229, 0.555);
+  margin-top: 45px;
+  border-radius: 25px;
+  position: relative;
+  height: 200px;
+  margin-bottom: 50px;
+}
+.section-drink img {
+  width: 300px;
+}
+.section-drink h2 {
+  color: #f17300;
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+
+.drink-ajust {
+  display: flex;
+  flex-direction: row;
+  gap: 150px;
+}
+.drink-ajust div {
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  font-family: poppins-regular;
+}
+
+.coca {
+  position: absolute;
+  left: 0;
+  bottom: -75px;
+}
+
+.heineken {
+  position: absolute;
+  right: 0;
+  bottom: -75px;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  font-family: poppins-ligth;
+  background-color: #f17105;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+}
+
+img {
+  width: 100%;
+}
+
+li {
+  list-style: none;
+  text-decoration: none;
+  cursor: pointer;
+}/*# sourceMappingURL=style.css.map */
