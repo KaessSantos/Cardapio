@@ -14,4 +14,138 @@ body>p{
    padding: 5px;
 }
 
+.section-on{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
+    .executive-container{
+        display: flex;
+        flex-direction: row;
+        gap: 60px;
+    }
+}
+
+.container--info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+}
+
+
+.pratos-info{
+    padding: 5px;
+    :last-child{
+        color: $abobora;
+        font-size: 0.8rem;
+    }
+}
+
+
+.section-twu>p{
+    color: $abobora;
+}
+
+.section-twry{
+    h2{
+        text-align: center;
+    }
+}
+
+.section-porc{
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+}
+
+
+
+.drink-ajust{
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+}
+
+.section-drink{
+    margin-bottom: 50px;
+}
+
+.col{
+    background-color: rgba(228, 227, 227, 0.575);
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+
+@media screen and (max-width: 992px){
+    .section-on{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    
+        .executive-container{
+            display: flex;
+            flex-direction: column;
+            gap: 60px;
+        }
+
+        .pratos-info{
+            :first-child{
+                font-size: 1.5rem;
+            }
+            
+            :last-child{
+                font-size: 1rem;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width:600px){
+    .section-on{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        h2{
+            font-size: 1.6rem;
+        }
+    
+        .executive-container{
+            display: flex;
+            flex-direction: column;
+            gap: 60px;
+        }
+
+        .pratos-info{
+            :first-child{
+                font-size: 1rem;
+            }
+            
+            :last-child{
+                font-size: 0.8rem;
+            }
+        }
+    }
+
+    .section-porc{
+        display: flex;
+        flex-direction: column;
+        gap: 60px;
+    }
+
+  .carda{
+    font-size: 4rem;
+  }
+}
