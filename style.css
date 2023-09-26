@@ -52,15 +52,15 @@
 .container .img-prato {
   display: flex;
   position: absolute;
-  width: 450px;
+  width: 25%;
   left: 0px;
-  top: 550px;
+  top: 650px;
   z-index: 1;
 }
 .container .img-porc {
   display: flex;
   position: absolute;
-  width: 450px;
+  width: 25%;
   right: 18px;
   top: 800px;
   z-index: 1;
@@ -94,23 +94,32 @@ header > p {
   font-family: poppins-semibold;
   text-shadow: 0px 2px 35px black;
 }
-.header-ajust .loa {
+
+.loa {
   position: relative;
   background-color: transparent;
-  width: 150px;
-  height: 150px;
+  width: 160px;
+  height: 160px;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
   border-radius: 50%;
-  border: 5px dashed #f17105;
+  border: 3px dashed #f17105;
   animation-name: load;
   animation-duration: 30s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
 }
 
+@keyframes load {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 .loaP {
   display: flex;
   flex-direction: column;
@@ -126,14 +135,6 @@ header > p {
   font-family: poppins-semibold;
 }
 
-@keyframes load {
-  0% {
-    transform: rotate(0);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
 .section-on {
   background-color: rgba(233, 229, 229, 0.555);
   padding: 10px;
@@ -254,7 +255,7 @@ header > p {
   margin-bottom: 50px;
 }
 .section-drink img {
-  width: 300px;
+  width: 25%;
 }
 .section-drink h2 {
   color: #f17300;
@@ -285,6 +286,119 @@ header > p {
   bottom: -75px;
 }
 
+@media screen and (max-width: 992px) {
+  header {
+    padding: 0px 20px;
+  }
+  header > p {
+    font-size: 4rem;
+    color: #fff;
+    position: absolute;
+    top: -90px;
+    font-family: dancing-regular;
+    text-transform: capitalize;
+    margin-left: 7px;
+  }
+  .header-ajust h1 {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-family: poppins-semibold;
+    text-shadow: 0px 2px 35px black;
+  }
+  .header-ajust .loa {
+    position: relative;
+    background-color: transparent;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 50%;
+    border: 5px dashed #f17105;
+    animation-name: load;
+    animation-duration: 30s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  }
+  .loaP {
+    font-size: 0.7rem;
+    right: 30px;
+  }
+  .section-on h2 {
+    font-size: 1.8rem;
+  }
+  .col-on {
+    padding: 0;
+  }
+  .col-on .pratos-info {
+    margin: 10px;
+  }
+  .col-on .pratos-info :first-child {
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-family: poppins-ligth;
+    font-weight: 400;
+  }
+  .col-on .pratos-info :last-child {
+    color: #f17300;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+  .section-twu h2 {
+    font-size: 2rem;
+  }
+  .section-twu p {
+    font-size: 1rem;
+  }
+  .section-twu .section-pf p {
+    font-size: 1rem;
+  }
+  .section-twry h2 {
+    font-size: 2rem;
+  }
+  .section-twry .section-porc p {
+    font-size: 1rem;
+  }
+  .section-drink h2 {
+    font-size: 2rem;
+  }
+  .section-drink .drink-ajust p {
+    font-size: 1rem;
+  }
+  .coca {
+    position: absolute;
+    left: 0;
+    bottom: 5px;
+  }
+  .heineken {
+    position: absolute;
+    right: 0;
+    bottom: 5px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .container .img-prato {
+    top: 880px;
+    left: 30px;
+    width: 95%;
+  }
+  .container .img-porc {
+    top: 62%;
+    left: 70px;
+    width: 75%;
+  }
+  .executive-container {
+    flex-direction: column;
+  }
+  .section-twu {
+    margin-top: 250px;
+  }
+  .section-twry {
+    margin-top: 250px;
+  }
+}
 body {
   width: 100%;
   height: 100vh;
