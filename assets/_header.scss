@@ -19,7 +19,7 @@ header{
             animation-name:  animarLoad;
             animation-duration: 30s;
             animation-iteration-count: infinite;
-
+            animation-timing-function: linear;
         }
 
         h1{
@@ -54,8 +54,6 @@ header{
 
     100%{
         transform: rotate(360deg);
-        background-color: orange;
-        border: 4px dashed $black-primary;
     }
 }
 
